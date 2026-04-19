@@ -1,0 +1,58 @@
+name: Bug Report
+description: Report a bug or unexpected behaviour in MacroEngine Fabric
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before reporting, make sure you are using the latest version and have permission level 2 on your server.
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      placeholder: "e.g. 1.21.4"
+    validations:
+      required: true
+
+  - type: input
+    id: fabric_version
+    attributes:
+      label: Fabric Loader Version
+      placeholder: "e.g. 0.16.9"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Run command /macro-engine create dp ...
+        2. Observe error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs
+      description: Paste server log output or crash reports here.
+      render: text

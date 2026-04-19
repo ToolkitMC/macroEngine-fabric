@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "macroengine",
+  "version": "${version}",
+  "name": "MacroEngine",
+  "description": "Advanced Macro Engine — developer toolkit for scaffolding and managing Minecraft datapacks and resource packs.",
+  "authors": [
+    "ToolkitMC"
+  ],
+  "contact": {
+    "sources": "https://github.com/ToolkitMC/macroEngine-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/macroengine/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "mc.toolkitmc.macroengine.MacroEngineMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  }
+}
